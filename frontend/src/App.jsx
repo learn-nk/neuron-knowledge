@@ -1,3 +1,4 @@
+import AITest from "./pages/AITest.jsx";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
@@ -17,6 +18,7 @@ export default function App() {
         
         {/* Routes */}
         <Routes>
+          <Route path="/test-ai" element={<AITest />} />
           <Route path="/" element={<Hub />} />
           <Route path="/hub" element={<Hub />} />
           <Route path="/transcribe" element={<TranscribePage />} />
